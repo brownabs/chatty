@@ -1,10 +1,12 @@
 import '../styles/main.scss';
-import { getUsers, getMessages } from './helpers/data';
+import { getMessages } from './helpers/data';
+import Utils from './helpers/utils';
+import Profile from './components/profileModal';
 
 // comment
 const init = () => {
-  console.log(getMessages());
-  console.log(getUsers());
+  Utils.printMessages(getMessages());
+  Profile.profileDetails();
 };
 
 init();
