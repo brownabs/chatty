@@ -2,8 +2,23 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+  background-color: white;
+  font-family: 'Margarine', cursive;
+}
+
+.navbar {
+  background-color: #6330CE !important;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: white !important;
+}
+
+img {
+  height: 40px
+}
+
+#currentUserMessages {
+  margin-top: 100px
 }
