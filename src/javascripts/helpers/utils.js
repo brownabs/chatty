@@ -4,7 +4,7 @@ import Delete from '../components/deleteMessage';
 
 const printMessages = (array) => {
   $('#messages').html('');
-
+  console.log(array);
   const newArray = array.filter((i, index) => (index < 20));
 
   if (newArray !== null) {

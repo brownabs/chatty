@@ -7,7 +7,7 @@ const deleteMessage = (index, array) => {
   $(`#delete-${index}`).click(() => {
     array.splice(index, 1);
     Print.printMessages(array);
-    Add.addMessage();
+    Add.addMessage(array);
   });
 };
 

@@ -9,7 +9,7 @@ import Delete from './components/removeAllMessages';
 const init = () => {
   Utils.printMessages(getMessages());
   // Profile.profileDetails();
-  Message.addMessage();
+  Message.addMessage(getMessages());
   Delete.removeAllMessages();
 };
 

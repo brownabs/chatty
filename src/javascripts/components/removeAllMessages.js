@@ -2,8 +2,8 @@ import { getMessages } from '../helpers/data';
 
 const removeAllMessages = () => {
   if ($('#messages').html !== '') {
-    $('#clear').on('click', () => {
-      $('#messages').remove();
+    $('#clear').off('click').on('click', () => {
+      $('#messages').html('');
       getMessages().length = 0;
     });
   }
