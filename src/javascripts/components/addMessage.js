@@ -1,7 +1,8 @@
+import moment from 'moment';
 // eslint-disable-next-line import/no-cycle
 import Print from '../helpers/utils';
 // eslint-disable-next-line import/no-cycle
-import Delete from './deleteMessage';
+import Delete from './removeAllMessages';
 
 const addMessage = (array) => {
   const messages = array;
@@ -10,9 +11,10 @@ const addMessage = (array) => {
       const message = {
         id: `message${messages.length + 1}`,
         content: $('#message').val(),
-        timeStamp: Date(),
+        timeStamp: moment().format('MM/DD/YY, h:mm a'),
         userId: 'localStorageUser'
       };
+      console.log(message);
       messages.push(message);
       Print.printMessages(messages);
       Delete.removeAllMessages();
