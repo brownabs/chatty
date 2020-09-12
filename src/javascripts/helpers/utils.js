@@ -4,12 +4,15 @@ import Delete from '../components/deleteMessage';
 
 const printMessages = (array) => {
   $('#messages').html('');
-  if (array !== null) {
-    array.forEach((message, index) => {
+
+  const newArray = array.filter((i, index) => (index < 20));
+
+  if (newArray !== null) {
+    newArray.forEach((message, index) => {
       $('#messages').append(Messages.messageCard(message, index));
-      Delete.deleteMessage(index, array);
+      Delete.deleteMessage(index, newArray);
     });
-  } if (array.length === 0) {
+  } if (newArray.length === 0) {
     $('#clear').remove();
   }
 };
