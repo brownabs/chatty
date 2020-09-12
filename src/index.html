@@ -10,14 +10,13 @@
 <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">Chatty</a>
+    <form class="form-inline" id="message-form">
+      <input class="form-control-lg mr-sm-2" id="message" type="text" placeholder="type message...">
+      </form>
+      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="submit"><i class="fas fa-arrow-circle-up"></i></button>
+      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button>  
     </nav>
   <div id="messages"></div>
-  <div id="add-message"></div>
-  <form class="form-inline" id="message-form">
-  <input class="form-control-lg mr-sm-2" id="message" type="text" placeholder="type message...">
-  </form>
-  <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="submit"><i class="fas fa-arrow-circle-up"></i></button>
-  <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button>
-
+  <div id="add-message"></div>  
 </body>
 </html>

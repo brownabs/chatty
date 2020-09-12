@@ -1,8 +1,9 @@
-import { getMessages } from '../helpers/data';
 // eslint-disable-next-line import/no-cycle
 import Print from '../helpers/utils';
+import { getMessages } from '../helpers/data';
 
 const addMessage = () => {
+  console.log('clicked');
   const messages = getMessages();
   $('#submit').off('click').on('click', () => {
     if ($('#message').val() !== '') {
