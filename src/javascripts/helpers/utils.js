@@ -3,14 +3,14 @@ import Messages from '../components/messageCard';
 import Delete from '../components/deleteMessage';
 
 const printMessages = (array) => {
-  $('#currentUserMessages').html('');
-  // $('#otherUserMessages').html('');
+  $('#messages').html('');
   if (array !== null) {
     array.forEach((message, index) => {
-      $('#currentUserMessages').append(Messages.messageCard(message, index));
-      // $('#otherUserMessages').append(messageCard(index, message));
-      Delete.deleteDinosaur(index, array);
+      $('#messages').append(Messages.messageCard(message, index));
+      Delete.deleteMessage(index, array);
     });
+  } if (array.length === 0) {
+    $('#clear').remove();
   }
 };
 
