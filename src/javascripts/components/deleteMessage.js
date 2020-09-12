@@ -3,7 +3,7 @@ import Print from '../helpers/utils';
 // eslint-disable-next-line import/no-cycle
 import Add from './addMessage';
 
-const deleteDinosaur = (index, array) => {
+const deleteMessage = (index, array) => {
   $(`#delete-${index}`).click(() => {
     array.splice(index, 1);
     Print.printMessages(array);
@@ -11,4 +11,4 @@ const deleteDinosaur = (index, array) => {
   });
 };
 
-export default { deleteDinosaur };
+export default { deleteMessage };
