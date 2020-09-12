@@ -1,10 +1,10 @@
 // eslint-disable-next-line import/no-cycle
 import Print from '../helpers/utils';
-import { getMessages } from '../helpers/data';
+// eslint-disable-next-line import/no-cycle
+import Delete from './deleteMessage';
 
-const addMessage = () => {
-  console.log('clicked');
-  const messages = getMessages();
+const addMessage = (array) => {
+  const messages = array;
   $('#submit').off('click').on('click', () => {
     if ($('#message').val() !== '') {
       const message = {
@@ -13,9 +13,9 @@ const addMessage = () => {
         timeStamp: Date(),
         userId: 'localStorageUser'
       };
-
       messages.push(message);
       Print.printMessages(messages);
+      Delete.removeAllMessages();
     } else {
       $('#add-message').html('Please enter text');
     }
