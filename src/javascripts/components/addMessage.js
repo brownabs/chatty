@@ -4,9 +4,7 @@ import Print from '../helpers/utils';
 import Delete from './deleteMessage';
 
 const addMessage = (array) => {
-  console.log(array);
   const messages = array;
-  debugger;
   $('#submit').off('click').on('click', () => {
     if ($('#message').val() !== '') {
       const message = {
