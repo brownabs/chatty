@@ -6,6 +6,10 @@ body {
   font-family: 'Margarine', cursive;
 }
 
+.dark--mode {
+  background-color: lavender;
+}
+
 .navbar {
   background-color: #6330CE !important;
 }
@@ -22,3 +26,7 @@ img {
 #currentUserMessages {
   margin-top: 100px
 }
+
+.large--text {
+  font-size: 30px !important;
+}  

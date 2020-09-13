@@ -7,14 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/89776cb07c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">Chatty</a>
     <form class="form-inline" id="message-form">
       <input class="form-control-lg mr-sm-2" id="message" type="text" placeholder="type message...">
       </form>
       <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="submit"><i class="fas fa-arrow-circle-up"></i></button>
-      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button>  
+      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button> 
+      <div>
+        <input type="checkbox" id="large-text" name="large-text">
+        <label for="large-text">Large Text</label>
+      </div>
     </nav>
   <div id="messages"></div>
   <div id="add-message"></div>  
