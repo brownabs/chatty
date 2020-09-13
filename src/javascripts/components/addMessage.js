@@ -14,7 +14,6 @@ const addMessage = (array) => {
         timeStamp: moment().format('MM/DD/YY, h:mm a'),
         userId: 'localStorageUser'
       };
-      console.log(message);
       messages.push(message);
       Print.printMessages(messages);
       Delete.removeAllMessages();
