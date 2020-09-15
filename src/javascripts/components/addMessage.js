@@ -6,6 +6,8 @@ import Delete from './removeAllMessages';
 
 const addMessage = (array) => {
   const messages = array;
+  // think this is why adding messages is buggy;
+
   $('#submit').off('click').on('click', () => {
     if ($('#message').val() !== '') {
       const message = {
