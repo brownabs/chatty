@@ -5,7 +5,6 @@ import { getMessages, getUsers } from './data';
 
 const printMessages = (array) => {
   $('#messages').html('');
-
   const newArray = array.filter((i, index) => (index < 20));
   if (newArray !== null) {
     newArray.forEach((message, index) => {
@@ -24,7 +23,7 @@ const printSelectedUserMessages = (array) => {
     const filteredMessages = getMessages().filter((message) => message.userId === user.id);
     if (filteredMessages !== null) {
       filteredMessages.forEach((message, index) => {
-        $('#messages').append(Messages.messageCard(message, index));
+        $('#messages').append(Messages.messageCard(message, index, currentUser));
         Delete.deleteMessage(index, filteredMessages);
       });
     } if (filteredMessages.length === 0) {
