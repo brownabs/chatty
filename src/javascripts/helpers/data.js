@@ -3,7 +3,7 @@ const messages = [
     id: 'message1',
     content: 'Marvel, Star Wars or Lord of the Rings?',
     timeStamp: '07/12/20, 5:17 am',
-    userId: 'user5'
+    userId: 'user1'
   },
   {
     id: 'message2',
