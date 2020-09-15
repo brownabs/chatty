@@ -8,19 +8,19 @@ const messages = [
   {
     id: 'message2',
     content: 'I love Lord of the Rings.',
-    timeStamp: '09/12/20, 2:17 pm',
+    timeStamp: '07/09/20, 1:17 pm',
     userId: 'user2'
   },
   {
     id: 'message3',
     content: 'How is it going?',
-    timeStamp: '09/12/20, 2:17 pm',
+    timeStamp: '07/12/20, 2:09 am',
     userId: 'user2'
   },
   {
     id: 'message4',
     content: '?',
-    timeStamp: '09/12/20, 2:17 pm',
+    timeStamp: '08/12/20, 2:17 pm',
     userId: 'user2'
   },
   {

@@ -28,9 +28,13 @@ img {
 }
 
 .large--text {
-  font-size: 30px !important;
+  font-size: 30px;
 }  
 
 .dark-card-mode {
-  background-color: 6330CE !important;
+  color: white;
+  background-color: black;
+}
+.dark--mode {
+  background-color: #6330CE;
 }
