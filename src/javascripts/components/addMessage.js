@@ -20,7 +20,9 @@ const addMessage = (array) => {
       Print.printMessages(messages);
       Delete.removeAllMessages();
     } else {
-      $('#add-message').html('Please enter text');
+      // eslint-disable-next-line no-alert
+      // eslint-disable-next-line no-undef
+      alert('Please enter text');
     }
   });
 };

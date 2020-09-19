@@ -2,8 +2,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: white;
+  background-color: lavender;
   font-family: 'Margarine', cursive;
+  overflow: scroll;
+
 }
 
 .dark--mode {
@@ -12,25 +14,75 @@ body {
 
 .navbar {
   background-color: #6330CE !important;
+  height: 100px;
+  padding-bottom: 10px !important
 }
 
 .navbar-brand {
-  font-size: 40px;
   color: white !important;
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 70px
 }
+
 
 img {
   height: 40px
 }
 
-#currentUserMessages {
-  margin-top: 100px
+#messages {
+  margin-top: 20px !important;
+  justify-content: end;
 }
 
 .large--text {
-  font-size: 30px !important;
+  font-size: 30px;
 }  
 
 .dark-card-mode {
-  background-color: 6330CE !important;
+  color: white;
+}
+.dark--mode {
+  background-color: #6330CE;
+}
+
+#sidebar{
+  min-height: 100% !important;
+  min-width: 250px;
+  margin-right: 10%
+}
+
+#type-and-send {
+  margin: none
+}
+
+#select-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#users {
+  display: flex;
+  justify-content: center;
+  padding: 20px
+}
+
+#user-label {
+  border-radius: 30px;
+  opacity: 85%;
+  background-color: white;
+  border: 3px #28CD0D solid;
+  height: 3rem
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 30px;
+  opacity: 85%
 }
