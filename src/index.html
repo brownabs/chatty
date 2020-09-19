@@ -10,20 +10,26 @@
 <body id="body">
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">Chatty</a>
+    <div class="d-flex flex-row" id="type-and-send">
     <form class="form-inline" id="message-form">
       <input class="form-control-lg mr-sm-2" id="message" type="text" placeholder="type message...">
       </form>
       <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="submit"><i class="fas fa-arrow-circle-up"></i></button>
-      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button> 
-      <div id="select-users"></div>
+    </div>
       <div>
         <input type="checkbox" id="large-text" name="large-text">
         <label for="large-text">Large Text</label>
         <input type="checkbox" id="dark-mode" name="dark-mode">
         <label for="dark-mode">Dark Mode</label>
       </div>
+      <button class="btn btn-outline-success btn-lg mx-4 my-2 my-sm-0" type="submit" id="clear">Clear All Messages</button> 
     </nav>
+    <div class="d-flex" id="page-container">
+    <div id="sidebar">
+      <div class="" id="select-users" style="font-size: 5rem; padding: 20px"><i class="fas fa-users fa-lg" id="users"></i></div>
+    </div>
   <div class="d-flex flex-column-reverse" id="messages"></div>
-  <div id="add-message"></div>  
+  <div id="add-message"></div> 
+</div> 
 </body>
 </html>
